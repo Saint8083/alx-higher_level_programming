@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/node
 // A script that print three line
 
 const line1 = 'C is fun';
