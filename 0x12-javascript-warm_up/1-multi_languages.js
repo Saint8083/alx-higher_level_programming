@@ -1,10 +1,12 @@
-#!/bin/node
-// A script that print three line
-
-const line1 = 'C is fun';
-const line2 = 'Python is cool';
-const line3 = 'JavaScript is amazing';
-
-console.log(line1);
-console.log(line2);
-console.log(line3);
+#!/usr/bin/node
+// a script that prints 3 lines
+const a = process.argv[2];
+const b = process.argv[3];
+function add (a, b) {
+  if (isNaN(a) || isNaN(b)) {
+    return (NaN);
+  } else {
+    return (parseInt(a) + parseInt(b));
+  }
+}
+console.log(add(a, b));
